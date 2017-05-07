@@ -11,7 +11,7 @@ public class Main {
 				"Ce programme va vous dire si un triangle est équilatéral \n Pour cela il vous faudra donner les coordonées de 3 points dans un repère orthogonal");
 
 		Scanner scanner = new Scanner(System.in);
-
+		
 		Coord a = build("a", scanner);
 		Coord b = build("b", scanner);
 		Coord c = build("c", scanner);
@@ -31,7 +31,7 @@ public class Main {
 
 		System.out.println(hyp.getName() + " au carré = " + hypo);
 		
-		double c0 = c1.getDistance() * c1.getDistance() + c2.getDistance() * c2.getDistance();
+		double c0 = Math.pow(c1.getDistance(), 2) + Math.pow(c2.getDistance(), 2);
 		
 		System.out.println(c1.getName() + " + " + c2.getName() + " au carré = " + c0);
 
